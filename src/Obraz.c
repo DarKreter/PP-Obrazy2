@@ -236,9 +236,9 @@ void Wyswietl(char* n_pliku)
     //Wyswietlenie obrazu o zadanej nazwie za pomoca programu "display"
     char polecenie[DL_LINII];      /* bufor pomocniczy do zestawienia polecenia */
 
-    //strcpy(polecenie, "display ");  /* konstrukcja polecenia postaci */
-    strcpy(polecenie, n_pliku);     /* display "nazwa_pliku" &       */
-    //strcat(polecenie, " &");
+    strcpy(polecenie, "display ");  /* konstrukcja polecenia postaci */
+    strcat(polecenie, n_pliku);     /* display "nazwa_pliku" &       */
+    strcat(polecenie, " &");
     system(polecenie);             /* wykonanie polecenia        */
 }
 //--------------------------------------------------------------
